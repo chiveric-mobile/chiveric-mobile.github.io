@@ -1,0 +1,120 @@
+/* Basic Reset & Body Styling */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6; /* Light gray background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure footer sticks to bottom */
+}
+
+/* Main Content Container */
+.container {
+    max-width: 600px;
+    margin: 40px auto; /* Add margin top/bottom */
+    padding: 30px;
+    background-color: #ffffff; /* White background for content */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-grow: 1; /* Allow container to grow and push footer down */
+}
+
+/* Optional App Icon */
+.app-icon {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 20px; /* Rounded corners for icon */
+}
+
+/* Headings and Text */
+h1 {
+    color: #1a1a1a;
+    margin-bottom: 0.5em;
+}
+
+.tagline {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 1.5em;
+}
+
+/* Store Buttons Section */
+.store-buttons {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    gap: 15px; /* Space between buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    margin-top: 25px;
+}
+
+.store-button img {
+    height: 50px; /* Adjust height as needed */
+    width: auto;
+    display: block; /* Remove extra space below image */
+}
+
+/* Optional: Highlight effect for detected OS */
+.store-button.highlight {
+    transform: scale(1.05); /* Slightly enlarge */
+    box-shadow: 0 0 15px rgba(0, 122, 255, 0.5); /* Add a glow */
+    border-radius: 7px; /* Match typical badge radius */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Optional Features Section */
+.features {
+    margin-top: 40px;
+    text-align: left;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.features ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.screenshot {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: auto; /* Pushes footer to bottom */
+    font-size: 0.9em;
+    color: #777;
+    background-color: #e9ecef; /* Slightly different background for footer */
+    width: 100%;
+}
+
+/* Basic Responsiveness */
+@media (max-width: 650px) {
+    .container {
+        margin: 20px 15px; /* Smaller margins on mobile */
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .store-button img {
+        height: 45px; /* Slightly smaller badges on mobile */
+    }
+}
